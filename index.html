@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamid's Online Cloth Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>👕 Comsian’s Online Cloth Store</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Add Product -->
+    <section id="add-section">
+      <h2>🧵 Add Product</h2>
+      <form id="product-form" enctype="multipart/form-data">
+        <input type="text" name="name" placeholder="Product Name" required>
+        <input type="number" name="price" placeholder="Price" required>
+        <input type="number" name="stock" placeholder="Stock" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Add Product</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Products -->
+    <section id="products-section">
+      <h2>🛍️ Available Products</h2>
+      <div id="product-list" class="products"></div>
+    </section>
+
+    <hr>
+
+    <!-- Cart -->
+    <section id="cart-section">
+      <h2>🛒 Your Cart</h2>
+      <input type="text" id="customer_name" placeholder="Enter Your Name" required>
+      <input type="text" id="phone" placeholder="Enter Your Phone Number" required>
+      <button onclick="viewCart()">View Cart</button>
+      <button onclick="checkout()">Checkout</button>
+      <div id="cart-items"></div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Comsian’s Store | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
